@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="2style.css" />
+  </head>
+  <body>
+    <div class="container">
+      
+      <!-- Left background panel -->
+      <div class="left-panel">
+        <div class="logo">
+          <img src="odin-lined.png" alt="logo">
+          <h1>odin</h1>
+        </div>
+        <p class="credit">Photo by Halie West on Unsplash</p>
+      </div>
+
+      <!-- Right form panel -->
+      <div class="form">
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. <br />
+          Sign up <em>now</em> to get started.
+        </p>
+        <p>You <em>know</em> you want to.</p>
+
+        <form action="example.com">
+          <div class="container2">
+            <h1>Let's do this!</h1>
+
+            <!-- Name row -->
+            <div class="form-row">
+              <div>
+                <label>FIRST NAME</label>
+                <input type="text" required />
+              </div>
+              <div>
+                <label>LAST NAME</label>
+                <input type="text" required />
+              </div>
+            </div>
+
+            <!-- Contact row -->
+            <div class="form-row">
+              <div>
+                <label for="email">EMAIL</label>
+                <input
+                  type="email"
+                  required
+                  name="user_email"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                />
+              </div>
+              <div>
+                <label for="PhoneNumber">PHONE NUMBER</label>
+                <input
+                  type="tel"
+                  required
+                  name="user_PhoneNumber"
+                  pattern="[0-9]{10}"
+                  maxlength="10"
+                />
+              </div>
+            </div>
+
+            <!-- Password row -->
+            <div class="form-row">
+              <div>
+                <label for="password">PASSWORD</label>
+                <input type="password" required />
+              </div>
+              <div>
+                <label for="confirm">CONFIRM PASSWORD</label>
+                <input type="password" required />
+              </div>
+            </div>
+          </div>
+
+          <button class="CreateBtn">Create Account</button>
+        </form>
+
+        <p class="login">Already have an account? <a href="#">Log in</a></p>
+      </div>
+    </div>
+  </body>
+</html>
